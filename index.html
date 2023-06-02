@@ -101,5 +101,22 @@ function updateCounter() {
 setInterval(updateCounter, 1);
 </script>
 
+    
+ <audio id="myAudio" src="https://lovevyg0508.github.io/Music.mp3"></audio>
+<script>
+  // Lấy tham chiếu đến phần tử audio
+  var audio = document.getElementById("myAudio");
+
+  // Phát nhạc tự động khi trang tải
+  audio.autoplay = true;
+
+  // Lặp lại việc phát nhạc khi nó kết thúc
+  audio.onended = function() {
+    audio.play();
+  };
+</script>
+
+    
+    
 </body>
 </html>
